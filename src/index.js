@@ -1,7 +1,7 @@
 import "./style.css";
-import Photo from "./photo.png";
+import { searchWeather } from "./search";
+
+let result = await searchWeather("hongkong"); //Await works at the top level of a module
 
 
-const myPhoto = new Image();
-myPhoto.src = Photo;
-document.querySelector("#photo").src = myPhoto.src;
+document.querySelector("h1").textContent = result.location.name;

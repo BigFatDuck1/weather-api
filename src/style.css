@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Roboto+Slab&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Cabin", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .test {
