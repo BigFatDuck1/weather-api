@@ -11,8 +11,6 @@ async function searchWeather(location) {
 
     let response = await fetch(url);
     let result = await response.json();
-    //TODO: delete this after eveyrthing is working
-    console.log(result); 
     return result;
 }
 
