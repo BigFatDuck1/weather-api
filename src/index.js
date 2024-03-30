@@ -52,6 +52,10 @@ async function displayInfo(place) {
     for (let key in INFO) {
 
         try {
+            if (key == "icon") {
+                document.querySelector(".weather_icon > img").src = "http:" + INFO[key];
+                document.querySelector(".weather_icon > img").style = "display: block;";
+            }
             document.querySelector(`.${key}`).textContent = INFO[key];
         } catch (error) {
             // if (key == "icon") {
